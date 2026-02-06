@@ -5,7 +5,6 @@ int queue[MAX] = {10,20,30,40,50};
 int front = 0;
 int rear = 4;
 
-// Dequeue Operation
 void dequeue()
 {
     if(front > rear)
@@ -17,9 +16,13 @@ void dequeue()
     }
 }
 
+
+
 int main()
 {
     dequeue();
     dequeue();
     return 0;
 }
+
+
