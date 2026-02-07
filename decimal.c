@@ -4,7 +4,6 @@
 int stack[MAX];
 int top = -1;
 
-// push operation
 void push(int value) {
     if (top == MAX - 1) {
         printf("Stack Overflow\n");
@@ -14,7 +13,6 @@ void push(int value) {
     }
 }
 
-// pop operation
 int pop() {
     if (top == -1) {
         printf("Stack Underflow\n");
@@ -30,7 +28,6 @@ int main() {
     printf("Enter a decimal number: ");
     scanf("%d", &decimal);
 
-    // convert decimal to binary
     while (decimal > 0) {
         remainder = decimal % 2;
         push(remainder);
@@ -44,3 +41,4 @@ int main() {
 
     return 0;
 }
+
